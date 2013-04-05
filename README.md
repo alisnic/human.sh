@@ -1,4 +1,4 @@
-human.hs
+human.sh
 ========
 
 Shell aliases for humans
