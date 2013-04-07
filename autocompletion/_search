@@ -1,6 +1,3 @@
-#compdef find
-#autoload
-
 _search() {
  # init variables
   local curcontext="$curcontext" state line
