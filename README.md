@@ -10,7 +10,7 @@ make the aliases available to clean zsh and to bash as well.
 ## Installation
 `git clone git@github.com:alisnic/human.sh.git ~/.oh-my-zsh/plugins/humansh`
 
-And the in your .zshrc add "humansh" to *plugins* list.
+And then in your .zshrc add "humansh" to *plugins* list.
 
 ## Available aliases
-- search <package | file | port | process>
+- search (package | file | port | process)
