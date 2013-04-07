@@ -1,0 +1,20 @@
+#compdef find
+#autoload
+
+_search() {
+ # init variables
+  local curcontext="$curcontext" state line
+  typeset -A opt_args
+
+  # init state
+   _arguments \
+    '1: :->mode'\
+    '2: :->argument'
+
+  case $state in
+  mode)
+    _arguments '1:mode:($(search --list))'
+  ;;
+  *)
+  esac
+}

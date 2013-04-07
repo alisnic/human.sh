@@ -1,0 +1,25 @@
+search () {
+  case "$1" in
+  package)
+      shift
+      pacman -Ss $@
+      ;;
+  file)
+      find -name $2
+      ;;
+  process)
+      ps -A | grep $2
+      ;;
+  port)
+      lsof -i :$2
+      ;;
+  --list)
+      #this for autocompletion
+      echo "package file process port"
+      ;;
+  *)
+      echo "You cannot find something like this."
+     ;;
+  esac
+}
+
