@@ -14,3 +14,7 @@ And then in your .zshrc add "humansh" to *plugins* list.
 
 ## Available aliases
 - search (package | file | port | process)
+
+TODO:
+- make it work in pure bash
+- make it OS independent
